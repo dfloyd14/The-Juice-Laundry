@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smoothies - The Juice Laundry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfaf7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f7941e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .smoothie-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .smoothie-item img, .placeholder {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            background-color: #ddd;
+            color: #666;
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .smoothie-text {
+            padding-left: 20px;
+        }
+        .smoothie-item h3 {
+            margin: 10px 0;
+            color: #f7941e;
+        }
+        footer {
+            background-color: #ececec;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .smoothie-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .smoothie-text {
+                padding-left: 0;
+                padding-top: 10px;
+            }
+        }
+        /* Subtle Hover Effects */
+nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+img:hover, .placeholder:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Superfood Smoothies</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="juices.html">Juices</a> |
+            <a href="smoothies.html">Smoothies</a> |
+            <a href="boosters.html">Boosters</a> |
+            <a href="acai-bowls.html">Acai Bowls & More</a>
+            | <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Coco Verde -->
+        <div class="smoothie-item">
+            <img src="images/coco-verde.jpg" alt="Coco Verde Smoothie">
+            <div class="smoothie-text">
+                <h3>Coco Verde ($8.00)</h3>
+                <p>Kale, Spinach, Mango, Banana, Dates, Coconut Oil, Coconut Water</p>
+            </div>
+        </div>
+
+        <!-- Bradley’s CB&J -->
+        <div class="smoothie-item">
+            <img src="images/bradleys-cbj.jpg" alt="Bradley's CB&J Smoothie">
+            <div class="smoothie-text">
+                <h3>Bradley’s CB&J ($7.75)</h3>
+                <p>Strawberry, Banana, Cashew Butter, Dates, Dragonfruit, House Cashew Milk</p>
+            </div>
+        </div>
+
+        <!-- Superman -->
+        <div class="smoothie-item">
+            <img src="images/superman.jpg" alt="Superman Smoothie">
+            <div class="smoothie-text">
+                <h3>Superman ($7.75)</h3>
+                <p>Blueberries, Goji Berries, Banana, Dates, Dragonfruit, House Almond Milk</p>
+            </div>
+        </div>
+
+        <!-- The Blaze -->
+        <div class="smoothie-item">
+            <img src="images/the-blaze.jpg" alt="The Blaze Smoothie">
+            <div class="smoothie-text">
+                <h3>The Blaze ($7.75)</h3>
+                <p>Strawberry, Mango, Banana, Dates, Ginger, Cayenne, House Cashew Milk</p>
+            </div>
+        </div>
+
+        <!-- Tropic Energy -->
+        <div class="smoothie-item">
+            <img src="images/tropic-energy.jpg" alt="Tropic Energy Smoothie">
+            <div class="smoothie-text">
+                <h3>Tropic Energy ($8.00)</h3>
+                <p>Mango, Banana, Dates, Dragonfruit, Brewed Guayusa</p>
+            </div>
+        </div>
+
+        <!-- Basil Bomb (Placeholder) -->
+        <div class="smoothie-item">
+            <div class="placeholder">Image Coming Soon</div>
+            <div class="smoothie-text">
+                <h3>Basil Bomb ($7.50)</h3>
+                <p>Strawberry, Banana, Basil, Dates, House Almond Milk</p>
+            </div>
+        </div>
+
+        <!-- Blended Brew -->
+        <div class="smoothie-item">
+            <img src="images/blended-brew.jpg" alt="Blended Brew Smoothie">
+            <div class="smoothie-text">
+                <h3>Blended Brew ($8.25)</h3>
+                <p>Banana, Cashew Butter, Cold Brew Coffee, Cacao (optional)</p>
+            </div>
+        </div>
+
+        <!-- Cacao Monster -->
+        <div class="smoothie-item">
+            <img src="images/cacao-monster.jpg" alt="Cacao Monster Smoothie">
+            <div class="smoothie-text">
+                <h3>Cacao Monster ($8.00)</h3>
+                <p>Banana, Cashew Butter, Cacao, House Almond Milk</p>
+            </div>
+        </div>
+
+        <!-- Kid Dynamite (Placeholder) -->
+        <div class="smoothie-item">
+            <div class="placeholder">Image Coming Soon</div>
+            <div class="smoothie-text">
+                <h3>Kid Dynamite ($6.75)</h3>
+                <p>Banana, Dragonfruit, House Cashew Milk</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>The Juice Laundry © 2025</p>
+    </footer>
+
+</body>
+</html>

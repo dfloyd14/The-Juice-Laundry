@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juices - The Juice Laundry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7fdf7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8cc63f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .juice-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .juice-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .juice-item h3 {
+            margin: 15px 0 10px;
+            color: #8cc63f;
+        }
+        .juice-item p {
+            font-size: 16px;
+        }
+        footer {
+            background-color: #ececec;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        @media (min-width: 600px) {
+            .juice-item {
+                flex-direction: row;
+                text-align: left;
+            }
+            .juice-item img {
+                margin-right: 20px;
+            }
+        }
+        /* Subtle Hover Effects */
+nav a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+img:hover, .placeholder:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Juices</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="juices.html">Juices</a> |
+            <a href="smoothies.html">Smoothies</a> |
+            <a href="boosters.html">Boosters</a> |
+            <a href="acai-bowls.html">Acai Bowls & More</a>
+            | <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="juice-item">
+            <img src="images/gentle-green.jpg" alt="Gentle Green Juice">
+            <div>
+                <h3>Gentle Green ($7.50)</h3>
+                <p>Kale, Spinach, Cucumber, Grapefruit, Apple</p>
+            </div>
+        </div>
+
+        <div class="juice-item">
+            <img src="images/citrus-fire.jpg" alt="Citrus Fire Juice">
+            <div>
+                <h3>Citrus Fire ($7.50)</h3>
+                <p>Orange, Grapefruit, Ginger, Lemon, Cayenne Pepper</p>
+            </div>
+        </div>
+
+        <div class="juice-item">
+            <img src="images/rinse-rebeet.jpg" alt="Rinse & Re-Beet Juice">
+            <div>
+                <h3>Rinse & Re-Beet ($7.50)</h3>
+                <p>Beet, Carrot, Cucumber, Celery, Lemon</p>
+            </div>
+        </div>
+
+        <div class="juice-item">
+            <img src="images/turmeric-tonic.jpg" alt="Turmeric Tonic Juice">
+            <div>
+                <h3>Turmeric Tonic ($6.50)</h3>
+                <p>Turmeric, Lime, Maple Syrup</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>The Juice Laundry © 2025</p>
+    </footer>
+
+</body>
+</html>
